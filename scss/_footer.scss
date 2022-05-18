@@ -1,0 +1,21 @@
+footer {
+    .contenedor-footer {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly ;
+
+        .ul-iconos-redes {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .redes {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}

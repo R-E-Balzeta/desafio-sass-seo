@@ -1,0 +1,40 @@
+main{
+    .contenedor-articulos {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
+
+        .article-uno {
+            width: 300px;
+        
+            .titulo-articulo {
+                display: flex;
+                justify-content: center;
+            }
+        
+        }
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+
+        .texto-formulario {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cuadro-nombre {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
+}
