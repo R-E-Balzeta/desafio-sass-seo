@@ -5,9 +5,10 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         justify-content: space-between;
-
+        padding: 3%;
         .article-uno {
             width: 300px;
+            padding: 2%;
         
             .titulo-articulo {
                 display: flex;
@@ -15,8 +16,14 @@ main{
             }
         
         }
-
+        
+        
+  
     }
+
+
+   
+    
 
     .formulario {
         display: flex;

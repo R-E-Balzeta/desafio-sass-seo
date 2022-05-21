@@ -30,7 +30,7 @@ body {
       top: -60px;
       left: -30px; }
     body header .menu li {
-      border-right: #d2ae6d;
+      border-right: #936a1f;
       border: 1px solid #fff; }
   @media screen and (max-width: 768px) {
     body header label {
@@ -62,9 +62,11 @@ main .contenedor-articulos {
   flex-direction: wrap;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 3%; }
   main .contenedor-articulos .article-uno {
-    width: 300px; }
+    width: 300px;
+    padding: 2%; }
     main .contenedor-articulos .article-uno .titulo-articulo {
       display: flex;
       justify-content: center; }
