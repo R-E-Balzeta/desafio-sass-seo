@@ -18,7 +18,8 @@ body {
             width: 30px;
             height: 30px;
             padding: 10px;
-            border-right: 1px solid #fff;
+            
+        
 
         }
         .logo {
@@ -29,8 +30,10 @@ body {
         }
 
         label:hover {
-            cursor: pointer;
+            cursor:auto;
             background-color: rgba(0,0,0,0.3);
+            display: flex;
+            left: 5px;
         }
 
         .menu{
@@ -41,7 +44,7 @@ body {
                 display: flex;
                 justify-content: end;
                 position: relative;
-                top: -60px;
+                top: 0px;
                 left: -30px;
 
             }
@@ -49,6 +52,9 @@ body {
             li{
                 border-right: $color-seconday;
                 border: 1px solid #fff;
+                padding: 5px;
+                margin: 5px;
+                
             }
         }
     }
@@ -58,32 +64,39 @@ body {
 
     @media screen and (max-width:768px){
         header{
+            
             label{
                 display: block;
             }
 
             .menu {
                 position: relative;
-                background-color: $color-primary;
+                
                 width: 40%;
                 margin-left: -40%;
                 transition: all 0.5s;
                 transition-delay: .1;
+                
+                
 
                 ul {
                     flex-direction: column;
                     position: relative;
-                    top: 0px;
+                    display: flex;
+                    top: 70px;
                     left: 0px;
 
                     li{
                         border-top: 1px solid #fff;
+                        align-items: center;
+                        justify-content: end;
                     }
                 }
             }
 
             #btn-menu:checked ~ .menu {
-                margin: 0;
+                margin: 2%;
+                
             }
 
             .logo{

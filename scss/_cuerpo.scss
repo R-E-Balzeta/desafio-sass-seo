@@ -1,18 +1,37 @@
+
+body{ 
+*margin: 0;
+background-color: $color-primary;
+
 main{
+
+    .contenedor-nosotros{
+        background-color: $color-primary;
+    }
     .contenedor-articulos {
+        background-color: #fff;
         display: flex;
         flex-direction: wrap;
         flex-wrap: wrap;
         justify-content: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: 3%;
+        margin: 3%;
         .article-uno {
             width: 300px;
-            padding: 2%;
+            border: 10px;
+            margin: 3%;
         
             .titulo-articulo {
                 display: flex;
                 justify-content: center;
+                font-family: "joan 400", sans-serif;
+            }
+
+            .parrafo-1 {
+                display: flex;
+                justify-content: center;
+                font-family: "joan 400", sans-serif
             }
         
         }
@@ -20,8 +39,91 @@ main{
         
   
     }
+    
+    .contenedor-img{
+
+        
+
+        .img-estudio{
+            hover {filter: opacity(.5);}
+        }
+        .contenedor-texto{
+            
+            width: 90%;
+            max-width: 1500px;
+            margin: 20px auto;
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: "h1-img-estudio h1-img-estudio"
+            "section-img-estudio section-img-estudio";
+            ;
+            
 
 
+            .h1-img-estudio{
+                grid-area: h1-img-estudio ;
+                text-align: center;
+            }
+            .section-img-estudio{
+                grid-area: section-img-estudio;
+                text-align: center;
+            }
+
+
+        
+        }
+        
+    }
+    
+
+    .contenedor-preguntas{
+        background-color: #fff;
+        width: 90%;
+        max-width: 1500px;
+        margin: 20px auto;
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+        grid-template-areas: " pregunta-1 pregunta-2";
+
+        .pregunta-1{
+            grid-area: pregunta-1;
+            background-color: rgb(176, 155, 155);
+            h3{
+                text-align: center;
+                font-family:"joan 400", sans-serif ;
+            }
+           
+
+        }
+
+        .pregunta-2{
+            grid-area: pregunta-2;
+            h3{
+                text-align: center;
+                font-family:"joan 400", sans-serif ;
+            }
+
+            section{
+                align-items: center;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            grid-template-areas: "pregunta-1 pregunta-1"
+            "pregunta-2 pregunta-2";
+        }
+
+    }
    
     
 
@@ -43,5 +145,8 @@ main{
 
         }
     }
+
+}
+
 
 }
